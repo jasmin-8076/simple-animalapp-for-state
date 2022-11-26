@@ -1,4 +1,4 @@
-
+import './App.css';
 import {useState} from 'react'
 import AnimaShow from './AnimaShow';
 
@@ -19,13 +19,13 @@ const renderedAnimals=ani.map((item,index)=>{
  
     return<AnimaShow type={item} key={index}/>
 });
-console.log(renderedAnimals);
+// console.log(renderedAnimals);
 return(
 
-<div>
+<div className='app'>
     <button onClick={handleClick}>
       Add animal</button>
-      <div>{renderedAnimals}</div>
+      <div className='animal-list'>{renderedAnimals}</div>
 
 
 </div>
